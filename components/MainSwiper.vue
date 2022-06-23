@@ -13,7 +13,6 @@
       </div>
       <div class="swiper-slide">
         <Characters></Characters>
-
       </div>
       <div class="swiper-slide">
         <World></World>

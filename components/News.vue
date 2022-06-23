@@ -37,6 +37,7 @@ import axios from "axios";
 import tool from "../mixin/tool.js";
 
 export default {
+  name: "News",
   mixins: [tool],
   data() {
     return {

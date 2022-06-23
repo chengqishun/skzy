@@ -1,14 +1,11 @@
 <template>
   <section class="pc-index-section faction-section">
     <div class="session-content">
-      <div v-if="show"
-           class="content">
-        <FactionList @enter="enter"></FactionList>
-      </div>
-      <div v-else
-           class="content">
-        <FactionList></FactionList>
-        <Exhibition ref="Exhibition"
+      <div class="content">
+        <FactionList v-if="show"
+                     @enter="enter"></FactionList>
+        <Exhibition v-else
+                    ref="Exhibition"
                     :active="active"></Exhibition>
       </div>
     </div>
