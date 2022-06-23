@@ -37,9 +37,6 @@ export default {
       this.name = "";
       this.show = false;
     },
-    c() {
-      console.log("c");
-    },
   },
 };
 </script>

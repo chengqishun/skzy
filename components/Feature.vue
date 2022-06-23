@@ -67,7 +67,6 @@ export default {
         },
       }
     );
-    console.log(res);
     this.features = res.data.data;
   },
   methods: {

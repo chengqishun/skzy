@@ -22,7 +22,6 @@ export default {
   },
   methods: {
     enter(name) {
-      console.log(name);
       this.active = name.toLowerCase();
       this.show = false;
     },

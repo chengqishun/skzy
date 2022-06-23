@@ -20,11 +20,11 @@
                    @click="play"></div>
             </div>
             <div class="cl-dl-box">
-              <a href=""
+              <a :href="`${$router.options.base}`"
                  class="cl-dl-btn dl-appstore"></a>
-              <a href=""
+              <a :href="`${$router.options.base}`"
                  class="cl-dl-btn dl-android"></a>
-              <a href=""
+              <a :href="`${$router.options.base}`"
                  class="cl-dl-btn dl-taptap"></a>
             </div>
             <div class="qrcode-dl-box play-icon"></div>

@@ -53,5 +53,16 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
+  },
+
+  router: {
+    base: '/skzy/',
+    resourceHints: false,
+    prefetchLinks: false  // 解决首屏加载全部js
+  },
+
+  generate: {
+    devtools: true,
+    routes: ['/article/28', '/article/27', '/article/26']
   }
 }

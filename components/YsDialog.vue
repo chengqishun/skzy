@@ -69,7 +69,6 @@ export default {
   },
   watch: {
     value(v) {
-      console.log(11);
       if (v) {
         this.$nextTick(() => {
           document.body.append(this.$refs.dialog);

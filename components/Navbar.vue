@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="container">
-      <a href="/"><img src="https://skzy.ys4fun.com/main/_nuxt/g202206151721/img/skzy-logo.083e97d.png"
+      <a :href="`${$router.options.base}`"><img src="https://skzy.ys4fun.com/main/_nuxt/g202206151721/img/skzy-logo.083e97d.png"
              alt=""></a>
       <div class="link-box">
         <img v-for="(item,index) in linkBoxData"

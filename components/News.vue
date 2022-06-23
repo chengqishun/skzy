@@ -14,7 +14,7 @@
             <div class="news-item"
                  v-for="item in newList"
                  :key="item.id">
-              <a :href="`/article/${item.id}`">
+              <a :href="`${$router.options.base}/article/${item.id}`">
                 <span class="date">{{format(item.disDate)}}</span>
                 <span class="type">{{typeFormat(item.type)}}</span>
                 <span class="title">{{item.title}}</span>
@@ -22,7 +22,7 @@
               </a>
             </div>
             <div class="list-more">
-              <a href=""
+              <a :href="`${$router.options.base}`"
                  class="more-btn">查看全部情报</a>
             </div>
           </div>
@@ -82,21 +82,9 @@ export default {
           }
         )
         .then(({ data }) => {
-          console.log(data);
           this.newList = data.data.records;
         });
     },
-    // format(time) {
-    //   return dayjs(time).format("YYYY-MM-DD");
-    // },
-    // typeFormat(type) {
-    //   let data = {
-    //     news: "新闻",
-    //     notice: "公告",
-    //     act: "活动",
-    //   };
-    //   return data[type];
-    // },
   },
 };
 </script>

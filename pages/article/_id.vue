@@ -3,10 +3,10 @@
     <div class="pc-container">
       <div class="page-content-container">
         <div class="pc-breadcrumb">
-          <a href="/"
+          <a :href="`${$router.options.base}`"
              class="breadcrumb-item nuxt-link-active">首页</a>
           <span class="breadcrumb-separator">></span>
-          <a href="/news"
+          <a :href="`${$router.options.base}/news`"
              class="breadcrumb-item">新闻情报</a>
           <span class="breadcrumb-separator">&gt;</span>
           <span class="breadcrumb-item">公告</span>
@@ -43,11 +43,9 @@ export default {
     return {};
   },
   validate() {
-    console.log();
     return true;
   },
   async asyncData({ $axios, params }) {
-    console.log(params);
     const res = await $axios.get(
       "https://open.ys4fun.com/game-website-server/pass/game/news/get_info",
       {

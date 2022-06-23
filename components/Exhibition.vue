@@ -338,7 +338,6 @@ export default {
       });
     },
     selectCharacter(name) {
-      console.log(name);
       this.currentCharacter = "";
       this.$nextTick(() => {
         this.currentCharacter = name;

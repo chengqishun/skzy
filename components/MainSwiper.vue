@@ -57,9 +57,7 @@ export default {
   },
   beforeMount() {},
   mounted() {
-    console.log(this);
     this.$bus.$on("mainSwiperGo", (i) => {
-      console.log(this);
       this.$swiper.slideTo(i, 600);
     });
   },
